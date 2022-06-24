@@ -18,6 +18,8 @@ public class PlayerBehavior : MonoBehaviour
 
     public bool isGrounded = false;
 
+    public ToolBehavior tool;
+
     private void Awake()
     {
         _controller = GetComponent<CharacterController>();
