@@ -19,6 +19,7 @@ public class PlayerBehavior : MonoBehaviour
     public bool isGrounded = false;
 
     public ToolBehavior tool;
+    public Transform handSlot;
 
     private void Awake()
     {
