@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Tool
   - Breakable
+  - Pickup
   layers:
   - Default
   - TransparentFX

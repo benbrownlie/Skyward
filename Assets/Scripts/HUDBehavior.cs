@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class ToolBehavior : MonoBehaviour
+public class HUDBehavior : MonoBehaviour
 {
-    public bool isEquipped;
+    public Text interactMessage;
 
     // Start is called before the first frame update
     void Start()
@@ -18,15 +19,8 @@ public class ToolBehavior : MonoBehaviour
         
     }
 
-    public void EquipItem()
+    public void DisplayToHUD(string message)
     {
-        if (!isEquipped)
-        {
-            isEquipped = true;
-        }
-        else
-        {
-            isEquipped = false;
-        }
+        interactMessage.text = message;
     }
 }
